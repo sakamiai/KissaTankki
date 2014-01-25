@@ -62,7 +62,7 @@ public class MainMenu : MonoBehaviour {
 			if (GUI.Button (new Rect (50, 250, 300, 100), helpTex)) {
 			}
 
-			if (GUI.Button (new Rect (50, 400, 300, 100), "QUIT")) {
+			if (GUI.Button (new Rect (50, 400, 300, 100), exitTex)) {
 				Application.Quit();
 			}
 		} else if (story < tarinaKuvat.Length) {
