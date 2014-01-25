@@ -6,15 +6,50 @@ ModelImporter:
     100000: alusta
     100002: //RootNode
     100004: viisari
+    100006: BezierCurve
+    100008: Cube
+    100010: oikeaVipu
+    100012: ruutu
+    100014: screen
+    100016: throttle
+    100018: vasenVipu
     400000: alusta
     400002: //RootNode
     400004: viisari
+    400006: BezierCurve
+    400008: Cube
+    400010: oikeaVipu
+    400012: ruutu
+    400014: screen
+    400016: throttle
+    400018: vasenVipu
     2300000: alusta
     2300002: viisari
+    2300004: BezierCurve
+    2300006: Cube
+    2300008: oikeaVipu
+    2300010: ruutu
+    2300012: screen
+    2300014: throttle
+    2300016: vasenVipu
     3300000: alusta
     3300002: viisari
+    3300004: BezierCurve
+    3300006: Cube
+    3300008: oikeaVipu
+    3300010: ruutu
+    3300012: screen
+    3300014: throttle
+    3300016: vasenVipu
     4300000: viisari
     4300002: alusta
+    4300004: screen
+    4300006: vasenVipu
+    4300008: oikeaVipu
+    4300010: BezierCurve
+    4300012: ruutu
+    4300014: throttle
+    4300016: Cube
     7400000: Default Take
     9500000: //RootNode
   materials:

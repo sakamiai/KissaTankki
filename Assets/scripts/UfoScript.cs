@@ -42,6 +42,7 @@ public class UfoScript : MonoBehaviour {
 			dead = true;
 			GameObject b = (GameObject)Instantiate (burst, transform.position, Quaternion.identity);
 			b.transform.LookAt (b.transform.position + Vector3.up);
+
 			Destroy (gameObject);
 		}
 	}

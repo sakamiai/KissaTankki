@@ -16,6 +16,7 @@ public class CannonScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space)) {
+			audio.Play();
 			GameObject ball = (GameObject)Instantiate(cannonball, shootPosition.position, Quaternion.identity);
 			ball.rigidbody.AddForce(transform.up * power);
 
