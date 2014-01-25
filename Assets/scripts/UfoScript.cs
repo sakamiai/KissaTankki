@@ -5,6 +5,7 @@ public class UfoScript : MonoBehaviour {
 
 	public Transform tankki;
 	public float speed = 2f;
+	public bool dead = false;
 
 	public bool chase = false;
 	public float chaseRange = 10f;
@@ -36,12 +37,19 @@ public class UfoScript : MonoBehaviour {
 		transform.LookAt (tankki);
 	}
 
+	public void Explode() {
+		if (!dead) {
+			dead = true;
+			GameObject b = (GameObject)Instantiate (burst, transform.position, Quaternion.identity);
+			b.transform.LookAt (b.transform.position + Vector3.up);
+			Destroy (gameObject);
+		}
+	}
+
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
-		if (hit.gameObject.name == "Tankki") {
-			GameObject b = (GameObject)Instantiate(burst, transform.position, Quaternion.identity);
-			b.transform.LookAt(b.transform.position + Vector3.up);
-			Destroy(gameObject);
+		if (hit.gameObject.tag == "Tank") {
+			Explode();
 		}
 	}
 }

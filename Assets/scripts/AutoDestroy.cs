@@ -17,8 +17,4 @@ public class AutoDestroy : MonoBehaviour {
 		}
 	}
 
-	void OnControllerColliderHit(ControllerColliderHit hit)
-	{
-		Debug.Log ("blaa");
-	}
 }
