@@ -18,11 +18,12 @@ public class forceMovement : MonoBehaviour {
 	void Update () {
 		Vector3 dir = (front.position - transform.position).normalized;
 
-		if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+		if (Input.GetKey(KeyCode.LeftArrow)) {
+
 			rigidbody.AddForceAtPosition(dir * speed, left.position);
 		}
 
-		if (Input.GetKeyDown(KeyCode.RightArrow)) {
+		if (Input.GetKey(KeyCode.RightArrow)) {
 			rigidbody.AddForceAtPosition(dir * speed, right.position);
 		}
 	}
