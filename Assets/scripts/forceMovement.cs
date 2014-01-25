@@ -8,10 +8,22 @@ public class forceMovement : MonoBehaviour {
 	public Transform front;
 
 	public float speed = 30f;
+	private float throttleSpeed ;
+
 
 	// Use this for initialization
 	void Start () {
-	
+		throttleSpeed = 0f;
+		Throttle.OnValueChanged += HandleOnValueChanged;
+	}
+
+	void OnDisable() {
+		Throttle.OnValueChanged -= HandleOnValueChanged;
+	}
+
+	void HandleOnValueChanged (float value)
+	{
+		throttleSpeed = value ;
 	}
 	
 	// Update is called once per frame
@@ -20,11 +32,11 @@ public class forceMovement : MonoBehaviour {
 
 		if (Input.GetKey(KeyCode.LeftArrow)) {
 
-			rigidbody.AddForceAtPosition(dir * speed, left.position);
+			rigidbody.AddForceAtPosition(dir * speed * throttleSpeed, left.position);
 		}
 
 		if (Input.GetKey(KeyCode.RightArrow)) {
-			rigidbody.AddForceAtPosition(dir * speed, right.position);
+			rigidbody.AddForceAtPosition(dir * speed * throttleSpeed, right.position);
 		}
 	}
 }
