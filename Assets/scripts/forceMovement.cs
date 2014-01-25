@@ -10,11 +10,14 @@ public class forceMovement : MonoBehaviour {
 	public float speed = 30f;
 	private float throttleSpeed ;
 
+	public TankHealth condition;
 
 	// Use this for initialization
 	void Start () {
 		throttleSpeed = 0f;
 		Throttle.OnValueChanged += HandleOnValueChanged;
+
+		condition = GetComponent<TankHealth>();
 	}
 
 	void OnDisable() {
@@ -28,10 +31,13 @@ public class forceMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (condition.IsDestroyed())
+			return;
+
 		Vector3 dir = (front.position - transform.position).normalized;
 
 		if (Input.GetKey(KeyCode.LeftArrow)) {
-
 			rigidbody.AddForceAtPosition(dir * speed * throttleSpeed, left.position);
 		}
 

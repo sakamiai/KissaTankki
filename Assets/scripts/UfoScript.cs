@@ -43,6 +43,11 @@ public class UfoScript : MonoBehaviour {
 			GameObject b = (GameObject)Instantiate (burst, transform.position, Quaternion.identity);
 			b.transform.LookAt (b.transform.position + Vector3.up);
 
+			// Damage tank
+			if ((tankki.transform.position - transform.position).magnitude < 10f) {
+				tankki.GetComponent<TankHealth>().Damage();
+			}
+
 			Destroy (gameObject);
 		}
 	}
