@@ -69,7 +69,7 @@ public class MainMenu : MonoBehaviour {
 			GUI.DrawTexture(new Rect (0, 0, Screen.width, Screen.height), tarinaKuvat[story], ScaleMode.StretchToFill);
 			GUI.Label(new Rect(50, Screen.height - 150, Screen.width - 50, 150), tarinaTekstit[story], style);
 		} else {
-			//Application.LoadLevel(1);
+			Application.LoadLevel(1);
 		}
 	}
 }
