@@ -14,7 +14,7 @@ public class ControlPanelFixed : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3(transform.position.x,Y,transform.position.z) ;
-		//transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+//		transform.position = new Vector3(transform.position.x,Y,transform.position.z) ;
+//		transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
 	}
 }
