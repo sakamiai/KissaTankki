@@ -31,12 +31,12 @@ public class MainMenu : MonoBehaviour {
 		ukkoPos2 = Screen.height;
 
 		tarinaTekstit = new string[6];
-		tarinaTekstit [0] = "On vuosi 5001. Suuri soturi Arpinaama ja hänen uskollinen kumppaninsa Pikipöksy ovat lähdössä hurjalle seikkailulle kauas Kuuhun ja sen ohi.";
-		tarinaTekstit [1] = "Heillä on edessään pitkä ja vaarallinen matka, mutta uskollisella avaruusaluksellaan he pääsevät mihin vain!";
-		tarinaTekstit [2] = "Lopulta Arpinaama ja Pikipöksy jättävät taakseen Maan ja suuntaavat nokkansa kohti avaruutta.";
-		tarinaTekstit [3] = "Heidän uskollinen aluksensa vie heidät aina Kuun luokse ja vielä siitäkin eteenpäin.";
-		tarinaTekstit [4] = "Niin kauas he kulkevat, että he näkevät punaisen Marsin ja sen valtavat vuoret, jotka puhkovat pilviä avaruuteen asti.";
-		tarinaTekstit [5] = "Marsin pinnalle laskeutuvat he, suuret seikkailijat Arpinaama ja Pikipöksy, uljaalla kulkuneuvollaan.";
+		tarinaTekstit [0] = "On vuosi 5001. Suuri soturi Arpinaama ja hänen uskollinen kumppaninsa\n\n\n Pikipöksy ovat lähdössä hurjalle seikkailulle kauas Kuuhun ja sen ohi.";
+		tarinaTekstit [1] = "Heillä on edessään pitkä ja vaarallinen matka, mutta uskollisella\n\n\n avaruusaluksellaan he pääsevät mihin vain!";
+		tarinaTekstit [2] = "Lopulta Arpinaama ja Pikipöksy jättävät taakseen Maan ja suuntaavat\n\n\n nokkansa kohti avaruutta.";
+		tarinaTekstit [3] = "Heidän uskollinen aluksensa vie heidät aina Kuun luokse ja vielä siitäkin\n\n\n eteenpäin.";
+		tarinaTekstit [4] = "Niin kauas he kulkevat, että he näkevät punaisen Marsin ja sen valtavat\n\n\n vuoret, jotka puhkovat pilviä avaruuteen asti.";
+		tarinaTekstit [5] = "Marsin pinnalle laskeutuvat he, suuret seikkailijat Arpinaama ja Pikipöksy,\n\n\n uljaalla kulkuneuvollaan.";
 	}
 
 	void Update() {
