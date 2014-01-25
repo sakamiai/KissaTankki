@@ -6,8 +6,10 @@ public class LintuScript : MonoBehaviour {
 	public float damping = 0.5f;
 	public float speed = 2f;
 	public bool dead = false;
+	public float chaseDistance = 50f;
 
 	public Transform target;
+	public Transform tankki;
 
 	public float altitude = 0f;
 
@@ -16,6 +18,7 @@ public class LintuScript : MonoBehaviour {
 		speed = Random.Range(4f, 8f);
 		damping = Random.Range(0.3f, 0.4f);
 		altitude = Random.Range(-6f, 6f);
+		tankki = GameObject.Find("Tankki").transform;
 	}
 
 	// Update is called once per frame
@@ -36,6 +39,11 @@ public class LintuScript : MonoBehaviour {
 						Destroy(gameObject);
 					}
 				}
+			}
+
+			Vector3 directionToTank = tankki.position - transform.position;
+			if (!dead && directionToTank.magnitude < chaseDistance) {
+				flytarget = tankki.position;
 			}
 
 			//Vector3 direction = target.position - transform.position;
