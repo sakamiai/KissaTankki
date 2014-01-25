@@ -13,6 +13,7 @@ ModelImporter:
     100014: throttle
     100016: oikeaVipu
     100018: vasenVipu
+    100020: screen
     400000: BezierCurve
     400002: //RootNode
     400004: Cube
@@ -23,6 +24,7 @@ ModelImporter:
     400014: throttle
     400016: oikeaVipu
     400018: vasenVipu
+    400020: screen
     2300000: BezierCurve
     2300002: Cube
     2300004: Cylinder
@@ -33,6 +35,7 @@ ModelImporter:
     2300014: throttle
     2300016: oikeaVipu
     2300018: vasenVipu
+    2300020: screen
     3300000: BezierCurve
     3300002: Cube
     3300004: Cylinder
@@ -43,6 +46,7 @@ ModelImporter:
     3300014: throttle
     3300016: oikeaVipu
     3300018: vasenVipu
+    3300020: screen
     4300000: BezierCurve
     4300002: ruutu
     4300004: Sphere
@@ -52,6 +56,7 @@ ModelImporter:
     4300012: throttle
     4300014: vasenVipu
     4300016: oikeaVipu
+    4300018: screen
     7400000: Default Take
     9500000: //RootNode
   materials:
