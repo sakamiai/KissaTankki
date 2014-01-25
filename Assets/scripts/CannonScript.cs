@@ -7,6 +7,7 @@ public class CannonScript : MonoBehaviour {
 	public Transform shootPosition;
 	public float power = 10000f;
 
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,7 +17,8 @@ public class CannonScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space)) {
 			GameObject ball = (GameObject)Instantiate(cannonball, shootPosition.position, Quaternion.identity);
-			ball.rigidbody.AddForce(transform.forward * power);
+			ball.rigidbody.AddForce(transform.up * power);
+
 		}
 	}
 }
