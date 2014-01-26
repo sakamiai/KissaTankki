@@ -18,6 +18,7 @@ public class ValoVipuScript : MonoBehaviour {
 		if (state) {
 			valo.enabled = true;
 			transform.rotation = startRotation * Quaternion.Euler(new Vector3(0, 0, 180));
+
 		} else {
 			valo.enabled = false;
 			transform.rotation = startRotation;
