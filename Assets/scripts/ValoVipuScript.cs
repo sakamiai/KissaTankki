@@ -14,7 +14,7 @@ public class ValoVipuScript : MonoBehaviour {
 		state = !state;
 		if (state) {
 			valo.enabled = true;
-			transform.localRotation
+			// transform.localRotation
 		} else {
 			valo.enabled = false;
 		}

@@ -13,6 +13,8 @@ ModelImporter:
     100014: screen
     100016: throttle
     100018: vasenVipu
+    100020: Camera
+    100022: Lamp
     400000: alusta
     400002: //RootNode
     400004: viisari
@@ -23,6 +25,8 @@ ModelImporter:
     400014: screen
     400016: throttle
     400018: vasenVipu
+    400020: Camera
+    400022: Lamp
     2300000: alusta
     2300002: viisari
     2300004: BezierCurve
